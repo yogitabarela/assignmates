@@ -14,7 +14,7 @@ class TeacherSignupScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.asset(
-                'assets/images/th(1).jpeg', // Add your welcome image asset here
+                'assets/images/th(1).jpeg', 
                 height: 150,
               ),
             const SizedBox(height: 20),  

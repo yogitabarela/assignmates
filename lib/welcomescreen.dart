@@ -13,7 +13,7 @@ class WelcomeScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Image.asset(
-                'assets/images/davvlogo1.png', // Add your welcome image asset here
+                'assets/images/davvlogo1.png', 
                 height: 150,
               ),
               const SizedBox(height: 20),
@@ -48,7 +48,7 @@ class WelcomeScreen extends StatelessWidget {
                       children: [
                         CircleAvatar(
                           radius: 40,
-                          backgroundImage: AssetImage('assets/images/th(1).jpeg'), // Add your teacher image asset here
+                          backgroundImage: AssetImage('assets/images/th(1).jpeg'), 
                         ),
                         SizedBox(height: 10),
                         Text('Teacher'),
@@ -67,7 +67,7 @@ class WelcomeScreen extends StatelessWidget {
                       children: [
                         CircleAvatar(
                           radius: 40,
-                          backgroundImage: AssetImage('assets/images/th(3).jpeg'), // Add your student image asset here
+                          backgroundImage: AssetImage('assets/images/th(3).jpeg'), 
                         ),
                         SizedBox(height: 10),
                         Text('Student'),
