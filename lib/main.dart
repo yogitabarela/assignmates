@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
 import 'welcomescreen.dart';
-void main() {
+import 'package:firebase_core/firebase_core.dart';
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -15,8 +18,8 @@ class MyApp extends StatelessWidget {
       title: 'Assignmates',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSwatch().copyWith(
-          primary:const Color.fromARGB(255, 11, 74, 15),
-          secondary:const Color.fromARGB(255, 87, 34, 3),
+          primary: const Color.fromARGB(255, 11, 74, 15),
+          secondary: const Color.fromARGB(255, 87, 34, 3),
         ),
         textTheme: const TextTheme(
           bodyMedium: TextStyle(color: Color.fromARGB(255, 0, 0, 0)),
@@ -26,5 +29,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
-

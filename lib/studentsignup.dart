@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:assignmates/database/database.dart';
 
 class StudentSignupScreen extends StatelessWidget {
   @override
@@ -71,6 +72,7 @@ class StudentSignupScreen extends StatelessWidget {
               ElevatedButton(
                 onPressed: () {
                   // Handle sign-up logic here
+                  // AuthMethods.signUpUser()
                 },
                 child: const Text('Sign Up'),
               ),
