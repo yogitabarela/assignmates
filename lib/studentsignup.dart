@@ -5,8 +5,12 @@ class StudentSignupScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Student Signup'),
+        title: const Text('Student Signup',style: TextStyle(color: Colors.white),),
         backgroundColor: Theme.of(context).colorScheme.primary,
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back_ios ,color: Colors.white),
+          onPressed: () => Navigator.of(context).pop(),
+        ),
       ),
       body: SingleChildScrollView(
         child: Padding(
@@ -14,9 +18,9 @@ class StudentSignupScreen extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Image.asset(
-                'assets/images/th(3).jpeg', // Add your welcome image asset here
-                height: 150,
+              CircleAvatar(
+                backgroundImage: AssetImage('assets/images/th(4).jpeg'),
+                radius: 100,
               ),
             const SizedBox(height: 20),
               const TextField(
